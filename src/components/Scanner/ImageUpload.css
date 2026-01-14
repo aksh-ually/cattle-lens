@@ -1,0 +1,83 @@
+.image-upload {
+  width: 100%;
+}
+
+.upload-zone {
+  border: 3px dashed var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 4rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+  background: var(--background-alt);
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-zone:hover,
+.upload-zone.dragging {
+  border-color: var(--primary-color);
+  background: rgba(44, 85, 48, 0.05);
+}
+
+.upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.upload-icon {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.upload-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.upload-content p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.upload-hint {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.upload-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.preview-img {
+  max-width: 100%;
+  max-height: 500px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 768px) {
+  .upload-zone {
+    padding: 2rem 1rem;
+    min-height: 250px;
+  }
+
+  .upload-icon {
+    font-size: 3rem;
+  }
+
+  .upload-content h3 {
+    font-size: 1.2rem;
+  }
+}
+

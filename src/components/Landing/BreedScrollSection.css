@@ -1,0 +1,15 @@
+.breed-scroll-section { padding: 64px 0; }
+.breed-scroll-section .section-header { text-align: center; margin-bottom: 24px; }
+.breed-scroll-section .section-header h2 { font-size: 28px; font-weight: 700; }
+.breed-scroll-section .section-header p { color: #666; }
+.scroll-container { display: flex; overflow-x: auto; gap: 16px; scroll-snap-type: x mandatory; padding-bottom: 8px; }
+.breed-card { flex: 0 0 80%; max-width: 80%; background: #fff; border: 1px solid #eee; border-radius: 12px; scroll-snap-align: start; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+.breed-card-content { display: flex; align-items: stretch; }
+.breed-card-text { flex: 1; padding: 20px; }
+.breed-name { font-size: 22px; font-weight: 700; margin: 0 0 4px; }
+.breed-origin { font-size: 14px; color: #888; margin: 0 0 12px; }
+.breed-desc { font-size: 15px; color: #444; margin: 0 0 16px; }
+.breed-actions { display: flex; gap: 8px; }
+.breed-card-media { width: 40%; border-left: 1px solid #eee; display: flex; align-items: center; justify-content: center; padding: 12px; }
+.breed-image { max-width: 100%; height: auto; border-radius: 0 12px 12px 0; object-fit: cover; }
+@media (max-width: 768px) { .breed-card { flex: 0 0 90%; max-width: 90%; } .breed-card-content { flex-direction: column; } .breed-card-media { width: 100%; border-left: 0; border-top: 1px solid #eee; } .breed-image { border-radius: 0 0 12px 12px; } }

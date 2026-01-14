@@ -1,0 +1,63 @@
+.confidence-meter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.confidence-circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confidence-svg {
+  width: 100px;
+  height: 100px;
+  transition: var(--transition);
+}
+
+.confidence-progress {
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.confidence-percentage {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.confidence-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.confidence-meter.large .confidence-svg {
+  width: 150px;
+  height: 150px;
+}
+
+.confidence-meter.large .confidence-percentage {
+  font-size: 2rem;
+}
+
+.confidence-meter.large .confidence-label {
+  font-size: 1.1rem;
+}
+
+.confidence-meter.small .confidence-svg {
+  width: 60px;
+  height: 60px;
+}
+
+.confidence-meter.small .confidence-percentage {
+  font-size: 1rem;
+}
+
+.confidence-meter.small .confidence-label {
+  font-size: 0.75rem;
+}
+

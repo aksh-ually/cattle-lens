@@ -1,0 +1,18 @@
+.landing-page {
+  width: 100%;
+}
+
+.landing-page section {
+  padding: 4rem 0;
+}
+
+.landing-page section:nth-child(even) {
+  background: var(--background-alt);
+}
+
+@media (max-width: 768px) {
+  .landing-page section {
+    padding: 2rem 0;
+  }
+}
+
